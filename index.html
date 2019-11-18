@@ -1,0 +1,175 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>Αιτήσεις Πρακτικής Άσκησης</title>		<!--Titlos-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">	<!--όψη σε κινητά-->
+	<link rel="stylesheet" href="themes/mystyle.min.css" />					<!--τα css μου που δεν περνιέται-->
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />	<!--css-->
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>					<!--τα scripts-->
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+	<div data-role="header" align="center">						<!--Επικεφαλίδα-->
+		<img src="images/logo.png" width="120" height="120">
+		<div>
+			<h3>Σύστημα Αιτήσεων Πρακτικών Ασκήσεων Πανεπιστημίου Αιγαίου</h3>
+		</div>
+		
+	</div>
+	
+	<div data-role="tabs" id="tabs">			<!--Μενού επιλογών-->
+	  <div data-role="navbar">
+		<ul>
+		  <li><a href="#list" data-icon="bars" data-ajax="false">Λίστα Αιτήσεων</a></li>
+		  <li><a href="#form" data-icon="edit" data-ajax="false">Φόρμα Αίτησης</a></li>
+		  <li><a href="#info" data-icon="info" data-ajax="false">Σχετικά με εμάς</a></li>
+		</ul>
+	  </div>
+	  
+	  <div id="list" class="ui-body-d ui-content" align="center">		<!--Πρώτη σελίδα-->
+	    <h3>Η λίστα των αιτήσεων πρακτικών των φοιτητών χωρισμένα ανά ημέρα αίτησης.</h3>
+		<h4>Πατήστε πάνω σε κάποιο πεδίο για να δείτε τα στοιχεία αίτησης.</h4>
+		
+		<div class="ui-field-contain">				<!--Αναζήτηση στη λίστα-->
+			<label for="search-1">Κάντε Αναζήτηση κάποιο Όνομα στη Λίστα:</label>
+			<input type="search" name="search-1" id="search-1" value="">
+		</div>
+		
+		<ul data-role="listview" data-inset="true" class="ui-alt-icon">		<!--Λίστα-->
+		
+			<li data-role="list-divider">Παρασκευή 15 Νοεμβρίου 2019 <span class="ui-li-count">2</span></li>		<!--Χωρισμένες βάση ημερομηνία αιτήσεις καθώς και ο αριθμός μες στη μέρα-->
+			<li><a href="index.html">			
+			<h2>Γιώτης Γιωτόπουλος</h2>
+			<p><strong>01/01/2020 - 05/01/2020</strong></p>
+			<p>Siemens AG.</p>
+			<p>Έλεγχος και Δοκιμή Πλυντηρίων Μάλλινων Ρούχων με Φυσικές Τρίχες.</p>
+				<p class="ui-li-aside"><strong>6:24</strong>μμ</p>
+			</a></li>
+			<li><a href="index.html">
+			<h2>Σουρσαντίνος Κώστος</h2>
+			<p><strong>01/01/2020 - 01/05/2020</strong></p>
+			<p>Google Inc.</p>
+			<p>Ανάλυση και Σχεδιασμός Πληροφοριακών Συστημάτων Ασφάλειας Καφετιέρας.</p>
+				<p class="ui-li-aside"><strong>9:18</strong>πμ</p>
+			</a></li>
+			
+			<li data-role="list-divider">Πέμπτη 14 Νοεμβρίου 2019 <span class="ui-li-count">1</span></li>
+			<li><a href="index.html">
+			<h2>Κεραγιώτης Παναμίδης</h2>
+			<p><strong>05/05/2020 - 01/01/2021</strong></p>
+			<p>Facebook Inc.</p>
+			<p>Ανάλυση Δεδομένων Χρονοσημάτων Υποβολής Επονείδιστων Αστείων σε Ιδιωτικές Ομάδες Χρηστών.</p>
+				<p class="ui-li-aside"><strong>4:48</strong>μμ</p>
+			</a></li>
+			
+			<li data-role="list-divider">Τετάρτη 13 Νοεμβρίου 2019 <span class="ui-li-count">1</span></li>
+			<li><a href="index.html">
+			<h2>Χάσκελ Νέλλυ</h2>
+			<p><strong>01/05/2020 - 01/01/2021</strong></p>
+			<p>Whiskers Inc.</p>
+			<p>Διαχείριση Έργων Τεμπέλικου Τριψίματος σε Πόδια και Άρνησης Οιασδήποτε Λειτουργικότητας.</p>
+				<p class="ui-li-aside"><strong>7:48</strong>μμ</p>
+			</a></li>
+		</ul>
+		
+	  </div>
+	  
+	  <div id="form" class="ui-body-d ui-content" align="center">		<!--Δεύτερη σελίδα-->
+		<h3>Η φόρμα της αίτησης πρακτικής άσκησης.</h3>
+		<div>			<!--Ακολουθούν τα στοιχεία της φόρμας-->
+			<label for="textinput-2">Όνομα</label>
+			<input type="text" name="textinput-2" id="textinput-2" placeholder="Όνομα" value="">
+			
+			<label for="textinput-2">Επώνυμο</label>
+			<input type="text" name="textinput-2" id="textinput-2" placeholder="Επώνυμο" value="">
+			
+			<label for="select-native-2">Τμήμα</label>
+			<select name="select-native-2" id="select-native-2">
+				<option value="small">Μηχανικών Πληροφοριακών και Επικοινωνιακών Συστημάτων</option>
+				<option value="medium">Στατιστικής και Χρηματιστηριακών και Χρηματοοικονομικών Μαθηματικών</option>
+				<option value="large">Μαθηματικών</option>
+			</select>
+			
+			<label for="textinput-2">Οργανισμός Φορέας</label>
+			<input type="text" name="textinput-2" id="textinput-2" placeholder="Οργανισμός Φορέας" value="">
+			
+			<label for="textinput-2">Προτεινόμενη Θέση</label>
+			<input type="text" name="textinput-2" id="textinput-2" placeholder="Προτεινόμενη Θέση" value="">
+			
+			<label for="textarea-2">Γράψτε λίγα λόγια για εσάς</label>
+			<textarea cols="40" rows="8" name="textarea-2" id="textarea-2">Golden Paragraph</textarea>	
+			
+			<label for="date">Έναρξη Πρακτικής</label>
+			<input type="date" name="date" id="date" value="">
+			
+			<label for="date">Λήξη Πρακτικής</label>
+			<input type="date" name="date" id="date" value="">
+			
+			<fieldset data-role="controlgroup">
+				<legend>Επιλογή Τύπου Πρακτικής</legend>
+				<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2a" value="on" checked="checked">
+				<label for="radio-choice-v-2a">Απλή</label>
+				<input type="radio" name="radio-choice-v-2" id="radio-choice-v-2b" value="off">
+				<label for="radio-choice-v-2b">Διευρυμένη</label>
+			</fieldset>
+			
+			<!--Ακολουθεί pop up με τους όρους χρησης αν πατηθεί το κουμπί τους-->
+			<p>Με την παρακάτω δήλωση συμφωνώ με τους <a href="#myPopupDialog" data-rel="popup" data-position-to="window" data-transition="fade" class="ui-btn ui-corner-all ui-shadow ui-btn-inline">Όρους Χρήσης.</a>
+
+			<div data-role="popup" id="myPopupDialog">	<!--Το pop up-->
+			  <div data-role="header">
+				<h1>Όροι Χρήσης</h1>
+			  </div>
+
+			  <div data-role="main" class="ui-content">
+				<h2>Διαχείριση προσωπικών στοιχείων & όροι</h2>
+				<p>Τα στοιχεία που συμπληρώνετε στην αίτηση καθώς και τα δικαιολογητικά, χρησιμοποιούνται για την σύνταξη της σύμβασης και την πληρωμή της ασφάλειας ατυχήματος ΙΚΑ εφόσον διεκπεραιωθεί από τον ΕΛΚΕ του Πανεπιστημίου Αιγαίου. <br>
+					Στα στοιχεία που αναγράφονται στη σύμβαση, πρόσβαση έχουν η επιτροπή πρακτικής άσκησης του Τμήματος, ο Πρόεδρος του Τμήματος ΜΠΕΣ, οι υπάλληλοι του ΕΛΚΕ που διεκπεραιώνουν την πληρωμή ΙΚΑ και ο εκπρόσωπος του φορέα απασχόλησης που υπογράφει τη σύμβαση.<br> 
+					Τα στοιχεία καταχωρούνται στο ΠΣ του ΕΛΚΕ που διεκπεραιώνει την τυχόν πληρωμή ΙΚΑ και σε βάση δεδομένων του Τμήματος ΜΠΕΣ για την πρακτική άσκηση.<br>
+					Η σύμβαση πρακτικής άσκησης μπορεί να πραγματοποιηθεί μόνον στην περίπτωση που μεταφορτώσετε τα δικαιολογητικά στο eclass (https://eclass.icsd.aegean.gr/courses/ICSD434/)<br>
+					Η σύμβαση πρακτικής άσκησης μπορεί να πραγματοποιηθεί μόνον στην περίπτωση που συμφωνείτε με τα παραπάνω.</p>
+				<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b ui-icon-back ui-btn-icon-left" data-rel="back">Πίσω</a>
+			  </div>
+
+			</div>
+			</p> 
+
+			<form>
+				<label>
+					<input type="checkbox" name="checkbox-0 ">Συμφωνώ
+				</label>
+			</form>
+			<a href="#" class="ui-btn ui-icon-check ui-btn-icon-bottom">Υποβολή</a>
+			
+		</div>
+	  </div>
+	  
+	  <div id="info" class="ui-body-d ui-content" align="center">		<!--Τρίτη σελίδα-->
+		<h3>Λίγα λόγια για εμάς...</h3>
+		
+		<h4>Παναγιώτης Κεραμίδης</h4>
+		<p>321/2016067</p>
+		<p><a href="https://fossaegean.gr/" data-ajax="false">fossaegean</a></p>
+		<p>Πού θα μας βρείτε;</p>		
+			<!--Ακολουθεί η εικόνα που αν πατηθεί βγάζει στον χάρτη openstreetmaps. Δεν έβαλα html κώδικα για χάρτη γιατί δεν είχε zoom-->
+		<a href="https://www.openstreetmap.org/export/embed.html?bbox=26.70038491487503%2C37.79623543094889%2C26.703925430774692%2C37.79816624189021&amp;layer=mapnik&amp;marker=37.79720084272775%2C26.70215517282486">
+			<img src="images/map.png" width="100%"/>
+		</a>
+
+		</div>
+	  
+	</div>
+	
+	
+	
+
+<div data-role="footer" align="center">		<!--Footer-->
+	Ομάδα Ανάπτυξης Κοινότητας Ελεύθερου Λογισμικού & Λογισμικού Ανοιχτού Κώδικα <br>
+	<p><a href="https://fossaegean.gr/" data-ajax="false">fossaegean</a></p>
+</div>
+
+</body>
+</html>
